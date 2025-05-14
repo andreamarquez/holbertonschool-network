@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
-# Displays listening sockets with PID and program name
-
-# Use lsof to list listening sockets
-lsof -i -n -P | grep LISTEN
+# displays all listening sockets on the system
+netstat -lp
